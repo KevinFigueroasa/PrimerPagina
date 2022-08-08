@@ -1,0 +1,172 @@
+:root { /* Custom Propieties*/
+    --white: #f9f9f9;
+    --dark: #22223B;
+    --primary: #E84855;
+    --secondary: #7FD1B9;
+    --light-gray: #DAD6D6;
+    --title: 3.8rem;
+    --sub-title: 2.4rem;
+}
+
+html {
+    font-size: 62.5%; /* Se reduce el tamaño de la fuente raiz (Valor del navegador por defecto) */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1{
+    text-align: center;
+    color: blue;
+    font-size: 3.8rem;
+    margin: 0;
+    padding: 2rem 0;
+}
+
+body {
+    font-size: 16px; /* 1 rem = 10px */
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--secondary);
+}
+
+header {
+    background-color: var(--white);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Sección de Navegación */
+
+.container {
+    width: 120rem;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    background: var(--dark);
+    margin: auto;
+}
+
+.main-nav a {
+    display: inline-block;
+    color: var(--white);
+    padding: 1.2rem;
+    font-weight: 700;
+    }
+
+.main-nav a:hover {
+    background: var(--primary);
+    color: var(--dark);
+}
+
+.nav-bg {
+    background: var(--dark);
+}
+
+/* Sección del Hero */
+
+.hero {
+    background-image: url('./Media/hero-desarrollador.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+    height: 45rem;
+    color: var(--white);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.hero::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero-subtitle {
+    display: flex;
+
+    align-items: center;
+    gap: 1rem;
+}
+
+.move-front {
+    position: relative;
+    z-index: 1;
+}
+
+.btn {
+    background-color: var(--primary);
+    padding: 1rem 3rem;
+    border-radius: 0.3rem;
+    color: var(--white);
+    font-weight: 700;
+}
+
+.shadow {
+    margin: auto;
+    background-color: var(--white);
+    border-radius: 1rem;
+    padding: 2rem 3rem;
+}
+
+.positionated {
+    position: absolute;
+    top: 0;
+    left: 25rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.services-cards {
+    display: flex;
+    gap: 5rem;
+}
+
+.services-cards h3 {
+    color: var(--primary);
+    font-weight: 400;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card p {
+    text-align: center;
+}
+
+.icon-container {
+    background-color: var(--dark);
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
